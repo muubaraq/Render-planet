@@ -59,6 +59,11 @@ function renderPlanets() {
         planetDiv.classList.add("planet")
         planetDiv.style.background = planet.color
         planetDiv.innerHTML = planet.name
+        planetDiv.style.height = `${planet.diameter/1000}px`
+        planetDiv.style.width = `${planet.diameter/700}px`
+        planetDiv.style.textAlign = "center"
+        planetDiv.style.lineHeight = `${planet.diameter/1000}px`
+        planetDiv.style.fontSize = ".99em"
         planetDiv.addEventListener("mouseover", function() {
             let planetInfo = document.getElementsByClassName("diameter")[0]
             planetInfo.classList.add("planetInfo")
@@ -70,7 +75,7 @@ function renderPlanets() {
     
 }
 
-// Call the function to render the planets
+//Call the function to render the planets
 renderPlanets()
 
 
