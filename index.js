@@ -58,7 +58,6 @@ function renderPlanets() {
         let planetDiv = document.createElement("div")
         planetDiv.classList.add("planet")
         planetDiv.style.background = planet.color
-        planetDiv.innerHTML = planet.name
         planetDiv.style.height = `${planet.diameter/1000}px`
         planetDiv.style.width = `${planet.diameter/750}px`
         planetDiv.style.textAlign = "center"
