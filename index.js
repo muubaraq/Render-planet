@@ -60,7 +60,7 @@ function renderPlanets() {
         planetDiv.style.background = planet.color
         planetDiv.innerHTML = planet.name
         planetDiv.style.height = `${planet.diameter/1000}px`
-        planetDiv.style.width = `${planet.diameter/700}px`
+        planetDiv.style.width = `${planet.diameter/750}px`
         planetDiv.style.textAlign = "center"
         planetDiv.style.lineHeight = `${planet.diameter/1000}px`
         planetDiv.style.fontSize = ".99em"
